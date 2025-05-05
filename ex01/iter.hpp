@@ -6,7 +6,7 @@
 /*   By: mchouikr <mchouikr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 16:32:43 by mchouikr          #+#    #+#             */
-/*   Updated: 2025/04/30 16:59:06 by mchouikr         ###   ########.fr       */
+/*   Updated: 2025/05/05 11:06:10 by mchouikr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,13 @@
 template <typename T>
 
 void	iter(T* array, std::size_t length, void (*f)(T&)) {
+    for (std::size_t i = 0; i < length; ++i)
+        f(array[i]);
+}
+
+template <typename T>
+
+void	iter(T* array, std::size_t length, void (*f)(T const &)) {
     for (std::size_t i = 0; i < length; ++i)
         f(array[i]);
 }

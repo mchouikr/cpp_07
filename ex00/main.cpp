@@ -6,7 +6,7 @@
 /*   By: mchouikr <mchouikr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 13:56:50 by mchouikr          #+#    #+#             */
-/*   Updated: 2025/04/30 13:58:48 by mchouikr         ###   ########.fr       */
+/*   Updated: 2025/05/01 17:28:57 by mchouikr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,4 @@ int main( void ) {
 	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
 	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
 	return 0;
-	}
+}
